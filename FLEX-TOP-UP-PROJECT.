@@ -1,0 +1,178 @@
+PWOJÈ KONPLÈ E FLEX TOP UP
+
+Mwen vle konstwi yon sit e-commerce konplè, pwofesyonèl ki rele E FLEX TOP UP, pou vann Diamonds ak lòt sèvis Free Fire. Mwen pa vle yon senp landing page oswa demo. Mwen vle yon sistèm reyèl ki gen frontend, backend, database, koneksyon kliyan ak yon panel admin prive.
+
+1. DESIGN AK APARANS
+
+* Koulè prensipal: nwa, lò (gold) ak blan.
+* Design pwofesyonèl nan stil Free Fire Gaming.
+* Logo E FLEX TOP UP sou tout paj yo.
+* Bèl bannè, animasyon ak imaj Free Fire.
+* Sit la dwe mache sou iPhone, Android, tablèt ak òdinatè.
+* Lang: Kreyòl ayisyen ak franse.
+* Tout paj yo dwe gen yon aparans modèn ak pwofesyonèl.
+
+2. PAJ KLIYAN AN
+
+Kreye seksyon sa yo:
+
+* Akèy (Accueil).
+* Boutik (Boutique).
+* Free Fire Diamonds.
+* Booyah Pass.
+* Weekly Membership.
+* Level Up.
+* Kont Free Fire pou vann.
+* Panye (Panier).
+* Peman (Checkout).
+* Enskripsyon ak koneksyon.
+* Pwofil kliyan.
+* Istorik kòmand.
+* Swivi kòmand.
+* Notifikasyon.
+* Sipò kliyan.
+* Footer ak enfòmasyon kontak.
+
+3. BOUTON WHATSAPP SOU KOTE SIT LA
+
+Mete yon ti bouton WhatsApp flotan sou bò dwat ekran an, nan pati anba a, sou tout paj sit la.
+
+* Bouton an dwe gen logo WhatsApp.
+* Li dwe rete vizib pandan kliyan an ap desann oswa monte nan paj la.
+* Lè kliyan an klike sou li, li dwe ouvri yon konvèsasyon WhatsApp ak nimewo +509 5670-1079.
+* Mete yon mesaj otomatik tankou: « Bonjou E FLEX TOP UP, mwen bezwen èd pou yon kòmand. »
+* Bouton an pa dwe kache kontni sit la ni anpeche kliyan an klike sou lòt bouton yo.
+* Li dwe adapte ak telefòn ak òdinatè.
+
+Mete tou lyen TikTok, Instagram ak Telegram sou sit la.
+
+4. SÈVIS FREE FIRE AK DIAMONDS
+
+Mete pake Diamonds sa yo:
+100, 200, 300, 400, 500, 600, 700, 800, 900 ak 1000.
+
+Mwen dwe kapab ajoute, modifye, kache, aktive, dezaktive oswa efase nenpòt pake ak pri depi nan panel admin lan.
+
+Kliyan an dwe antre UID Free Fire li sèlman. Sistèm nan dwe itilize yon API serye pou verifye UID a epi jwenn non jwè a otomatikman. Pa mande kliyan an antre non li manyèlman.
+
+Mete tou:
+
+* Booyah Pass.
+* Weekly Membership.
+* Level Up.
+* Kont Free Fire pou vann ak foto ak pri mwen mete.
+
+5. PANEL ADMIN PRIVE AK KONTWÒL TOTAL
+
+Kreye yon lyen apa pou panel admin lan. Pa mete lyen sa a nan meni piblik sit la.
+
+Se sèlman imel sa a ki dwe gen aksè administratè:
+
+fredterryantoine509@icloud.com
+
+Pa bay okenn lòt imel dwa administratè. Verifye otorizasyon sou backend la, pa sèlman kache bouton oswa lyen yo.
+
+Panel admin lan dwe pèmèt mwen kontwole sit la san mwen pa bezwen modifye kòd la.
+
+Mwen dwe kapab:
+
+* Chanje non sit la, logo, koulè ak design.
+* Modifye tout tèks, foto, bannè ak videyo.
+* Ajoute, modifye, kache, aktive, dezaktive oswa efase pwodwi.
+* Chanje pri Diamonds ak lòt sèvis.
+* Kreye nouvo kategori ak pwodwi.
+* Ajoute oswa retire metòd peman.
+* Chanje nimewo WhatsApp ak lòt kontak.
+* Ajoute oswa retire lyen rezo sosyal yo.
+* Modifye paj Akèy, Boutik, About ak Contact.
+* Jere kliyan ak kont yo.
+* Jere kòmand ak estati kòmand yo.
+* Jere peman ak tranzaksyon yo.
+* Jere pwomosyon, kòd rabè ak òf espesyal.
+* Ajoute, modifye oswa retire kont Free Fire pou vann.
+* Chanje enstriksyon ak mesaj ki parèt sou sit la.
+* Aktive oswa dezaktive sèvis yo.
+* Mete sit la an maintenance epi remete l disponib.
+* Gade istorik aktivite administratè a.
+* Fè backup epi restore done yo lè sa posib.
+
+Tout chanjman mwen fè nan panel admin lan dwe parèt sou sit kliyan an otomatikman.
+
+6. DASHBOARD ADMIN
+
+Lè mwen antre nan panel admin lan, mwen vle wè:
+
+* Total lavant.
+* Kantite kòmand.
+* Kòmand ki an atant.
+* Kòmand ki fini.
+* Kòmand ki echwe.
+* Peman ki verifye.
+* Balans ak tranzaksyon.
+* Dènye aktivite kliyan yo.
+
+Mete enfòmasyon enpòtan yo byen vizib anlè dashboard la.
+
+7. NATCASH
+
+Mete NatCash kòm metòd peman prensipal.
+
+Nimewo NatCash: 56701079
+
+Non kont: uknonw
+
+Kliyan an dwe kapab:
+
+1. Chwazi NatCash.
+2. Wè nimewo peman an.
+3. Fè peman.
+4. Antre referans tranzaksyon an.
+5. Voye prèv peman si sa nesesè.
+6. Swiv estati kòmand li.
+
+Kòmand lan dwe rete an atant jiskaske peman an verifye. Pa konfime peman otomatikman san verifikasyon.
+
+Prepare entegrasyon API ofisyèl NatCash si aksè komèsan ak API disponib.
+
+8. TOP-UP OTOMATIK ATRAVÈ API
+
+Prepare yon sistèm top-up otomatik avèk yon founisè API serye ki sipòte Free Fire ak zòn kliyan yo.
+
+Fonksyònman an:
+
+1. Kliyan an antre UID li.
+2. Li verifye non jwè a.
+3. Li chwazi pake Diamonds.
+4. Li fè peman.
+5. Sistèm nan verifye peman an.
+6. Backend la voye kòmand lan bay founisè API a.
+7. Sistèm nan verifye repons livrezon an.
+8. Kòmand lan pase nan estati fini sèlman lè founisè a konfime livrezon an.
+
+Si gen erè, kòmand lan dwe rete an atant oswa pase nan echwe pou administratè a ka verifye l.
+
+Mwen poko gen API. Prepare estrikti a pou mwen kapab konekte yon founisè pita. Pa envante API, peman oswa livrezon ki poko disponib.
+
+9. DATABASE, BACKEND AK SEKIRITE
+
+Mwen bezwen:
+
+* Frontend.
+* Backend.
+* Database.
+* Sistèm koneksyon kliyan.
+* Sistèm administratè.
+* Jesyon kòmand ak peman.
+* Sekirite pou pwoteje done kliyan yo.
+* Pwoteksyon kont aksè san otorizasyon.
+* Kle API yo dwe rete sou backend la, pa nan kòd piblik sit la.
+
+Si GitHub Pages sèlman pa ka fè tout sa, itilize yon backend ak database ki apwopriye.
+
+10. KONDISYON FINAL
+
+Mwen vle tout seksyon yo konekte ansanm. Lè mwen ajoute yon pwodwi oswa chanje yon pri nan panel admin lan, chanjman an dwe parèt otomatikman sou sit kliyan an.
+
+Pa mete bouton ki pa mache. Pa montre fo balans, fo peman oswa fo kòmand fini.
+
+Mwen vle yon sit ki pare pou itilize, ak yon panel admin prive ki gen kontwòl total, epi ki ka konekte ak API top-up la lè mwen jwenn yon founisè serye.
