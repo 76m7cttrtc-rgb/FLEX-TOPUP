@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E FLEX TOP UP</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#090909;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background:#111;
+ border-bottom:1px solid #444;
+}
+.logo{font-size:22px;font-weight:bold;color:#f5c542}
+nav a{color:white;text-decoration:none;margin-left:12px}
+.hero{
+ text-align:center;
+ padding:65px 18px;
+ background:linear-gradient(140deg,#171717,#493508);
+}
+.hero h1{font-size:36px;color:#f5c542}
+.hero p{line-height:1.7;color:#ddd}
+.btn{
+ background:#e5b82e;
+ color:#111;
+ border:0;
+ padding:14px 20px;
+ border-radius:8px;
+ font-weight:bold;
+ cursor:pointer;
+}
+section{padding:30px 18px;max-width:1000px;margin:auto}
+h2{color:#f5c542}
+.products{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+ gap:15px;
+}
+.product{
+ background:#171717;
+ border:1px solid #555;
+ border-radius:12px;
+ padding:20px;
+ text-align:center;
+}
+.diamond{font-size:36px}
+.price{color:#f5c542;font-weight:bold}
+.product button{width:100%}
+form{
+ background:#171717;
+ padding:20px;
+ border-radius:12px;
+ border:1px solid #444;
+}
+input,select{
+ width:100%;
+ padding:14px;
+ margin:10px 0;
+ background:#090909;
+ color:white;
+ border:1px solid #555;
+ border-radius:7px;
+}
+.verify{width:100%;margin-top:10px}
+#playerResult{
+ margin-top:15px;
+ padding:15px;
+ background:#242424;
+ border-radius:8px;
+ display:none;
+}
+.status{color:#53db78}
+footer{
+ text-align:center;
+ padding:30px;
+ background:#151515;
+ color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">E FLEX TOP UP</div>
+<nav>
+<a href="#home">Accueil</a>
+<a href="#shop">Boutique</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>E FLEX TOP UP</h1>
+<h2>Recharge Free Fire rapidement !</h2>
+<p>
+Bienvenue chez E FLEX TOP UP.<br>
+Votre boutique de diamants Free Fire.
+</p>
+<a href="#shop">
+<button class="btn">DÉCOUVRIR LA BOUTIQUE</button>
+</a>
+</div>
+
+<section id="shop">
+<h2>💎 DIAMANTS FREE FIRE</h2>
+<div class="products" id="products"></div>
+</section>
+
+<section id="order">
+<h2>PASSER UNE COMMANDE</h2>
+
+<form id="orderForm">
+
+<label>UID FREE FIRE</label>
+<input
+ id="uid"
+ type="text"
+ inputmode="numeric"
+ placeholder="Entrez votre UID Free Fire"
+ required
+>
+
+<button
+ type="button"
+ class="btn verify"
+ id="verifyBtn"
+>
+VÉRIFIER MON UID
+</button>
+
+<div id="playerResult">
+<p class="status" id="playerStatus"></p>
+<strong>Nom du joueur :</strong>
+<p id="playerName"></p>
+</div>
+
+<label>Choisir un pack</label>
+<select id="pack">
+<option value="100 Diamants">100 Diamants</option>
+<option value="200 Diamants">200 Diamants</option>
+<option value="300 Diamants">300 Diamants</option>
+<option value="400 Diamants">400 Diamants</option>
+<option value="500 Diamants">500 Diamants</option>
+<option value="600 Diamants">600 Diamants</option>
+<option value="700 Diamants">700 Diamants</option>
+<option value="800 Diamants">800 Diamants</option>
+<option value="900 Diamants">900 Diamants</option>
+<option value="1000 Diamants">1000 Diamants</option>
+</select>
+
+<button class="btn" type="submit">
+CONFIRMER MA COMMANDE
+</button>
+
+<p id="message"></p>
+</form>
+</section>
+
+<footer>
+<h3>E FLEX TOP UP</h3>
+<p>Votre boutique Free Fire de confiance.</p>
+<p>© 2026 E FLEX TOP UP</p>
+</footer>
+
+<script>
+
+// PACKAGES
+const packages=[
+"100","200","300","400","500",
+"600","700","800","900","1000"
+];
+
+const products=document.getElementById("products");
+
+packages.forEach(number=>{
+ const card=document.createElement("div");
+ card.className="product";
+
+ card.innerHTML=`
+ <div class="diamond">💎</div>
+ <h3>${number} Diamants</h3>
+ <p class="price">Prix à configurer</p>
+ <button class="btn"
+ onclick="choosePack('${number} Diamants')">
+ CHOISIR
+ </button>
+ `;
+
+ products.appendChild(card);
+});
+
+function choosePack(pack){
+ document.getElementById("pack").value=pack;
+ document.getElementById("order").scrollIntoView({
+ behavior:"smooth"
+ });
+}
+
+// UID VERIFICATION
+// Connecter ici une API officielle ou autorisée.
+// Le serveur doit retourner:
+// { "valid": true, "nickname": "Player Name" }
+
+const VERIFY_UID_API = "";
+
+let verifiedUID="";
+
+document.getElementById("verifyBtn").addEventListener("click",async()=>{
+
+ const uid=document.getElementById("uid").value.trim();
+ const result=document.getElementById("playerResult");
+ const status=document.getElementById("playerStatus");
+ const name=document.getElementById("playerName");
+ const button=document.getElementById("verifyBtn");
+
+ verifiedUID="";
+ result.style.display="block";
+ name.textContent="";
+
+ if(!/^[0-9]{5,20}$/.test(uid)){
+  status.textContent="Veuillez entrer un UID valide.";
+  return;
+ }
+
+ if(!VERIFY_UID_API){
+  status.textContent="Service de vérification non encore connecté. L'API UID doit être configurée.";
+  return;
+ }
+
+ button.disabled=true;
+ status.textContent="Vérification en cours...";
+
+ try{
+  const response=await fetch(VERIFY_UID_API,{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify({uid:uid})
+  });
+
+  if(!response.ok) throw new Error("Verification failed");
+
+  const data=await response.json();
+
+  if(data.valid && data.nickname){
+   verifiedUID=uid;
+   name.textContent=data.nickname;
+   status.textContent="UID vérifié avec succès !";
+  }else{
+   status.textContent="UID invalide ou introuvable.";
+  }
+
+ }catch(error){
+  status.textContent="Impossible de vérifier l'UID. Réessayez.";
+ }finally{
+  button.disabled=false;
+ }
+});
+
+// ORDER
+document.getElementById("orderForm").addEventListener("submit",function(e){
+
+ e.preventDefault();
+
+ const uid=document.getElementById("uid").value.trim();
+
+ if(!verifiedUID || verifiedUID!==uid){
+  alert("Veuillez vérifier votre UID avant de commander.");
+  return;
+ }
+
+ const pack=document.getElementById("pack").value;
+
+ document.getElementById("message").textContent=
+ "UID vérifié : "+uid+
+ " | Pack : "+pack+
+ ". Le système de commande et de paiement doit encore être connecté.";
+
+});
+
+</script>
+
+</body>
+</html>
